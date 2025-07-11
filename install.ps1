@@ -18,8 +18,8 @@ $mail = GetUserEmail # Manual Enter
 InstallWinget    # Manual Approve
 SignInAccount    # Manual Sign in
 
-InstallNextcloud # Manual Sign in. Slow
-WaitLinkForNextcloud -path "$HOME\Nextcloud\Aiursoft\Box\costs.xlsx"
+#InstallNextcloud # Manual Sign in. Slow
+#WaitLinkForNextcloud -path "$HOME\Nextcloud\Aiursoft\Box\costs.xlsx"
 
 Write-Host "The following part is 100% automatic. You can have a cup of coffee!`n" -ForegroundColor DarkMagenta
 
@@ -27,34 +27,34 @@ Write-Host "-----------------------------" -ForegroundColor Green
 Write-Host "        PART 2  - Install    " -ForegroundColor Green
 Write-Host "-----------------------------" -ForegroundColor Green
 
-InstallVSCode
-InstallDotnet
+#InstallVSCode
+#InstallDotnet
 Install7Zip
 InstallVlc
-InstallGSudo
-InstallGit -mail $mail # Requires Nextcloud for SSH keys
+#InstallGSudo
+#InstallGit -mail $mail # Requires Nextcloud for SSH keys
 InstallWindowsTerminal # Requires Nextcloud for profile
 InstallPython
-InstallAria2
+#InstallAria2
 InstallFdm
 InstallChrome
 #InstallEdge
 InstallJava
 InstallOffice
-InstallAzureDataStudio
+#InstallAzureDataStudio
 InstallPwsh
-InstallBlender
+#InstallBlender
 InstallWeChat
 InstallWget
 InstallNssm
-InstallV2rayN
+#InstallV2rayN
 InstallIPerf3
 InstallFFmpeg
 InstallAdb
 InstallKubectl
 InstallNodeJs
 InstallNFSClient
-InstallVS -mail $mail
+#InstallVS -mail $mail
 
 if ($mail.Contains('microsoft')) {
     Write-Host "Welcome, Microsoft Employee!`n" -ForegroundColor DarkYellow
@@ -110,7 +110,7 @@ RemoveUwp Microsoft.MicrosoftSolitaireCollection
 RemoveUwp 4DF9E0F8.Netflix
 RemoveUwp Microsoft.GetHelp
 RemoveUwp Microsoft.People
-RemoveUwp Microsoft.YourPhone
+#RemoveUwp Microsoft.YourPhone
 RemoveUwp MicrosoftTeams
 RemoveUwp Microsoft.Getstarted
 RemoveUwp Microsoft.Microsoft3DViewer
