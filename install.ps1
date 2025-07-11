@@ -33,7 +33,7 @@ Install7Zip
 InstallVlc
 #InstallGSudo
 #InstallGit -mail $mail # Requires Nextcloud for SSH keys
-InstallWindowsTerminal # Requires Nextcloud for profile
+#InstallWindowsTerminal # Requires Nextcloud for profile
 InstallPython
 #InstallAria2
 InstallFdm
